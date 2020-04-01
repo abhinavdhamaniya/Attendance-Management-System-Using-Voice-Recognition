@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.AdminManageCoursesC">
+    <children>
+        <Label layoutX="307.0" layoutY="59.0" text="Manage Courses">
+            <font>
+                <Font size="39.0" />
+            </font>
+        </Label>
+        <Button fx:id="subs" layoutX="176.0" layoutY="257.0" mnemonicParsing="false" onAction="#openAdd" prefHeight="100.0" prefWidth="170.0" text="Add a new Course" textAlignment="CENTER" wrapText="true" />
+        <Button fx:id="unsub" layoutX="579.0" layoutY="257.0" mnemonicParsing="false" onAction="#openEdit" prefHeight="100.0" prefWidth="170.0" text="Edit a course" textAlignment="CENTER" wrapText="true" />
+        <Button fx:id="viewSubs" layoutX="379.0" layoutY="257.0" mnemonicParsing="false" onAction="#openRemove" prefHeight="100.0" prefWidth="170.0" text="Delete a course" textAlignment="CENTER" wrapText="true" />
+        <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
+    </children>
+</Pane>

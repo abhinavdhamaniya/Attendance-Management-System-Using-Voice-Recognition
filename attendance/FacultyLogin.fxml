@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.FacultyLoginC">
+   <children>
+      <Label layoutX="284.0" layoutY="88.0" text="Faculty Login" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="57.0" />
+         </font>
+      </Label>
+      <Button fx:id="flogin" layoutX="558.0" layoutY="373.0" mnemonicParsing="false" onAction="#doLogin" text="Login" />
+      <TextField fx:id="fusername" layoutX="455.0" layoutY="275.0" onAction="#doLogin" />
+      <Label fx:id="fusernamelabel" layoutX="328.0" layoutY="273.0" text="Username" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="fpasswordlabel" layoutX="328.0" layoutY="321.0" text="Password" textAlignment="CENTER">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="430.0" text="Not Registered? ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="facSignUp" layoutX="514.0" layoutY="428.0" mnemonicParsing="false" onAction="#openSignUp" text="Sign-Up Here" />
+      <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <PasswordField fx:id="fpassword" layoutX="455.0" layoutY="324.0" onAction="#doLogin" />
+   </children>
+</Pane>

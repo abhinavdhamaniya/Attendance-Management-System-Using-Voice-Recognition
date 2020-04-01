@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.StudentRegisteredByMeC">
+    <children>
+        <Label layoutX="240.0" layoutY="33.0" text="Courses Registered By Me">
+            <font>
+                <Font size="41.0" />
+            </font>
+        </Label>
+        <TableView fx:id="subCourses" layoutX="25.0" layoutY="145.0" prefHeight="400.0" prefWidth="850.0">
+            <columns>
+                <TableColumn fx:id="sno" prefWidth="44.00000190734863" text="S No" />
+                <TableColumn fx:id="code" prefWidth="103.99999237060547" text="Course Code" />
+                <TableColumn fx:id="name" prefWidth="132.79998779296875" text="Course Name" />
+                <TableColumn fx:id="desc" prefWidth="216.00003051757812" text="Course Description" />
+                <TableColumn fx:id="credits" prefWidth="72.00006103515625" text="Credits" />
+                <TableColumn fx:id="type" prefWidth="127.199951171875" text="Type" />
+                <TableColumn fx:id="subscribedBy" prefWidth="152.00006103515625" text="Faculty" />
+            </columns>
+        </TableView>
+        <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="Back" />
+    </children>
+</Pane>

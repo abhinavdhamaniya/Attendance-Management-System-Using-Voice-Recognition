@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.FacultyAttendanceVoiceTakeC">
+    <children>
+        <Label layoutX="363.0" layoutY="27.0" text="Class Attendance">
+            <font>
+                <Font size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="27.0" layoutY="136.0" text="Course Code :">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="110.0" text="Course Name :">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="25.0" layoutY="81.0" text="Faculty :">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="ccode" layoutX="131.0" layoutY="136.0" text="Label">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="cname" layoutX="131.0" layoutY="111.0" text="Label">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="cfac" layoutX="89.0" layoutY="81.0" text="Label">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TableView fx:id="atten" layoutX="25.0" layoutY="180.0" prefHeight="400.0" prefWidth="850.0">
+            <columns>
+                <TableColumn fx:id="sno" prefWidth="64.00003242492676" text="S No." />
+                <TableColumn fx:id="regno" prefWidth="159.19994354248047" text="Reg. No" />
+                <TableColumn fx:id="name" prefWidth="292.0000305175781" text="Name" />
+                <TableColumn fx:id="cocode" prefWidth="92.7999267578125" text="Course Code" />
+                <TableColumn fx:id="date" prefWidth="104.00006103515625" text="Date" />
+                <TableColumn fx:id="action" prefWidth="140.0" style="-fx-alignment: CENTER;" text="Action" />
+            </columns>
+        </TableView>
+        <Button fx:id="submit" layoutX="823.0" layoutY="27.0" mnemonicParsing="false" onAction="#submitAttendance" text="Submit" />
+      <Button fx:id="speak" layoutX="629.0" layoutY="120.0" mnemonicParsing="false" onAction="#startVoiceToText" text="Speak" />
+      <Label fx:id="instruct" layoutX="693.0" layoutY="121.0" text="Say Something" textFill="#359a5b">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="30.0" layoutY="27.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+    </children>
+</Pane>
